@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "objective": "Determine which of the three supported delivery options best matches the user's constraints.",
+  "language": "en",
+  "phase": "collect",
+  "stop_requested": false,
+  "required_facts": [
+    {
+      "id": "deadline",
+      "description": "the required delivery date",
+      "critical": true,
+      "status": "unknown",
+      "attempts": 0
+    },
+    {
+      "id": "budget",
+      "description": "the maximum acceptable cost",
+      "critical": true,
+      "status": "unknown",
+      "attempts": 0
+    }
+  ],
+  "hypotheses": [
+    {"id": "fast", "label": "express delivery", "score": 0.34},
+    {"id": "balanced", "label": "standard delivery", "score": 0.33},
+    {"id": "cheap", "label": "economy delivery", "score": 0.33}
+  ],
+  "observations": [],
+  "turns": [],
+  "action_history": [],
+  "policy": {
+    "max_turns": 10,
+    "max_attempts_per_fact": 2,
+    "max_repeated_actions": 2,
+    "min_hypothesis_score": 0.72,
+    "min_hypothesis_margin": 0.2,
+    "contradiction_threshold": 0.65,
+    "min_evidence_items": 2
+  }
+}
