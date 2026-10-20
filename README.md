@@ -12,6 +12,17 @@ Scripted question lists are brittle. A free-form agent can also lose track of re
 
 The policy can be tested without an LLM, and the LLM can be replaced without changing the dialogue state model.
 
+## Install as a Codex skill
+
+Clone the repository directly into the Codex skills directory:
+
+```powershell
+$dest = Join-Path $env:USERPROFILE ".codex\skills\adaptive-dialogue-engine"
+git clone https://github.com/hhhhxx1130/adaptive-dialogue-engine.git $dest
+```
+
+Codex discovers the skill from its `SKILL.md`. The controller itself uses only the Python standard library.
+
 ## Quick start
 
 ```bash
