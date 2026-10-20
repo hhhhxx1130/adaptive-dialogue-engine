@@ -1,0 +1,3 @@
+{"conversation_id":"c1","objective":"choose an option","turns":4,"max_turns":8,"completed":true,"latency_ms":900,"actions":[{"type":"probe","target":"deadline"},{"type":"probe","target":"budget"},{"type":"verify","target":"fast,balanced"},{"type":"summarize","target":"fast"}]}
+{"conversation_id":"c2","objective":"choose an option","turns":8,"max_turns":8,"completed":false,"latency_ms":1400,"actions":[{"type":"probe","target":"deadline"},{"type":"probe","target":"deadline"},{"type":"verify","target":"fast,balanced"},{"type":"verify","target":"fast,balanced"}]}
+{"conversation_id":"c3","objective":"choose an option","turns":3,"max_turns":8,"completed":false,"latency_ms":750,"actions":[{"type":"probe","target":"budget"}]}
