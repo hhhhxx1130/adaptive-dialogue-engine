@@ -1,0 +1,3 @@
+interface:
+  display_name: "Adaptive Dialogue Engine"
+  short_description: "Goal-driven dialogue state, next-move policy, and evaluation"
